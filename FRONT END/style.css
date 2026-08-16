@@ -1,0 +1,164 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f1f8f5;
+    color: #173b2f;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(135deg, #075e3c, #16a36a);
+    color: white;
+    text-align: center;
+    padding: 45px 20px;
+}
+
+header h1 {
+    font-size: 42px;
+    margin-bottom: 8px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+main {
+    max-width: 1100px;
+    margin: 35px auto;
+    padding: 0 20px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #075e3c;
+}
+
+#searchInput {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #c8ddd4;
+    border-radius: 10px;
+    font-size: 16px;
+    margin-bottom: 18px;
+    outline: none;
+}
+
+#searchInput:focus {
+    border-color: #16a36a;
+}
+
+.filters {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+}
+
+button {
+    background: #075e3c;
+    color: white;
+    border: none;
+    padding: 11px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #16a36a;
+    transform: translateY(-1px);
+}
+
+button:disabled {
+    background: #999;
+    cursor: not-allowed;
+    transform: none;
+}
+
+#stations {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.station-card {
+    background: white;
+    padding: 22px;
+    border-radius: 15px;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+    border-left: 5px solid #16a36a;
+}
+
+.station-card h3 {
+    color: #075e3c;
+    margin-bottom: 12px;
+}
+
+.station-card p {
+    margin-bottom: 8px;
+}
+
+.station-card button {
+    margin-top: 12px;
+    width: 100%;
+}
+
+hr {
+    margin: 45px 0;
+    border: none;
+    border-top: 1px solid #d5e5de;
+}
+
+#bookings {
+    margin-top: 20px;
+}
+
+#bookings .booking-card {
+    background: white;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+}
+
+section {
+    background: #075e3c;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 50px;
+}
+
+section h2 {
+    color: white;
+}
+
+section p {
+    max-width: 700px;
+    margin: auto;
+}
+
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    main {
+        padding: 0 15px;
+    }
+
+    .filters {
+        flex-direction: column;
+    }
+
+    .filters button {
+        width: 100%;
+    }
+}

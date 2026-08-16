@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>EVCharge India</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+    <!-- HEADER -->
+
+    <header>
+
+        <h1>EVCharge India</h1>
+
+        <p>
+            Find and book EV charging stations easily.
+        </p>
+
+    </header>
+
+
+
+    <!-- MAIN -->
+
+    <main>
+
+        <h2>
+            EV Charging Stations
+        </h2>
+
+
+        <!-- SEARCH -->
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search charging station..."
+        >
+
+
+
+        <!-- FILTER BUTTONS -->
+
+        <div class="filters">
+
+            <button id="allBtn">
+                All Stations
+            </button>
+
+            <button id="availableBtn">
+                Available
+            </button>
+
+            <button id="occupiedBtn">
+                Occupied
+            </button>
+
+        </div>
+
+
+
+        <!-- STATIONS -->
+
+        <div id="stations">
+
+            Loading charging stations...
+
+        </div>
+
+
+
+        <hr>
+
+
+
+        <!-- MY BOOKINGS -->
+
+        <h2>
+            My Bookings
+        </h2>
+
+
+        <button
+            id="viewBookingsBtn"
+            onclick="viewBookings()"
+        >
+            View My Bookings
+        </button>
+
+
+        <div id="bookings">
+
+        </div>
+
+
+
+    </main>
+
+
+
+    <!-- ABOUT -->
+
+    <section>
+
+        <h2>
+            About EVCharge India
+        </h2>
+
+
+        <p>
+
+            EVCharge India helps electric vehicle
+            users find charging stations, check
+            availability, and book charging
+            stations easily.
+
+        </p>
+
+    </section>
+
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="script.js?v=9999"></script>
+
+
+</body>
+
+</html>
